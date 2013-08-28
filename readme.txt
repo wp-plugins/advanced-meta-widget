@@ -6,11 +6,11 @@ Tested up to: 3.5.2
 Stable tag: 2.5.8
 License: GPLv2 or later
 
-Advanced meta widget allows you to chose, what you want to display in meta widget, and allows you to use redirect to actual URL when using login/out
+Advanced meta widget allows you to chose what you want to display in meta widget and allows you to use redirect to actual URL when using login/out
 
 == Description ==
 
-Advanced meta widget adds new widget which does the same as basic Wordpress built-in meta widget but allows you to chose what you want to display, and adds more features for managing this widget.
+Advanced meta widget adds new widget which does the same as basic Wordpress built-in meta widget but allows you to chose what you want to display and adds more features for managing this widget.
 
 == Installation ==
 
