@@ -1,8 +1,8 @@
 === Advanced meta widget ===
 Contributors: Sjiamnocna
 Tags: meta, widget, loginout, redirect, info, admin, user
-Requires at least: 3.0
-Tested up to: 3.6
+Requires at least: 2.7
+Tested up to: 3.5.2
 Stable tag: 2.5.8
 License: GPLv2 or later
 
@@ -24,6 +24,8 @@ Unpack archive contents into plugin folder (/wp-content/plugins/) and activate i
 
 == Changelog ==
 
+= 0.8.1 =
+*Fixed troubles with screenshots
 = 0.8 =
 *Created as each new plugin to add some new functions to Wordpress installation
 
