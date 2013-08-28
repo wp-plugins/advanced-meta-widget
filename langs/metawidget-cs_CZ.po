@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Advanced meta info widget\n"
+"POT-Creation-Date: 2013-08-27 19:58+0100\n"
+"PO-Revision-Date: 2013-08-27 20:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: cs_cz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../advanced-metainfo-widget.php:21
+msgid ""
+"Widget displaying many useful informations as Admin link or Login link and "
+"RSS feed links"
+msgstr ""
+"Widget zobrazující mnoho důležitých informací jako např. odkaz do "
+"administrace, nebo k přihlášení"
+
+#: ../advanced-metainfo-widget.php:23
+msgid "Advanced meta info widget"
+msgstr "Informace"
+
+#: ../advanced-metainfo-widget.php:42
+msgid "Admin link"
+msgstr "Odkaz do administrace"
+
+#: ../advanced-metainfo-widget.php:42
+msgid "Site admin"
+msgstr "Administrace"
+
+#: ../advanced-metainfo-widget.php:55
+msgid "Edit profile link"
+msgstr "Upravit profil"
+
+#: ../advanced-metainfo-widget.php:55
+msgid "Profile"
+msgstr "Profil"
+
+#: ../advanced-metainfo-widget.php:60
+msgid "Posts RSS feed"
+msgstr "RSS článků"
+
+#: ../advanced-metainfo-widget.php:65
+msgid "Comments RSS feed"
+msgstr "RSS komentářů"
+
+#: ../advanced-metainfo-widget.php:70
+msgid "link to Wordpress.org"
+msgstr "odkaz na stránky Wordpress.org"
+
+#: ../advanced-metainfo-widget.php:89
+msgid "Advanced meta info Widget"
+msgstr "Rozšířený widget Informace"
+
+#: ../advanced-metainfo-widget.php:94
+msgid "Title:"
+msgstr "Název:"
+
+#: ../advanced-metainfo-widget.php:99
+msgid "Display admin link (only logged-in users)"
+msgstr "Zobrazovat odkaz do administrace"
+
+#: ../advanced-metainfo-widget.php:103
+msgid "Display loginout"
+msgstr "Zobrazit přihlášení/odhlášení"
+
+#: ../advanced-metainfo-widget.php:106
+msgid "Use redirection to actual URL"
+msgstr "Použít přesměrování na aktuální adresu"
+
+#: ../advanced-metainfo-widget.php:110
+msgid "Display link to edit or view profile (only logged-in users)"
+msgstr "Zobrazovat odkaz k editaci profilu"
+
+#: ../advanced-metainfo-widget.php:114
+msgid "Display post RSS feed link"
+msgstr "Zobrazovat RSS příspěvků"
+
+#: ../advanced-metainfo-widget.php:118
+msgid "Display comments RSS feed link"
+msgstr "Zobrazovat RSS komentářů"
+
+#: ../advanced-metainfo-widget.php:122
+msgid "Display link to Wordpress.org"
+msgstr "Zobrazovat odkaz na Wordpress.org"
