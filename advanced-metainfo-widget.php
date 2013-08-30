@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Advanced meta widget
  * Description: Widget for displaying Wordpress info - Login/out, Admin, RSS feeds and Link to wordpress.org extended by few functions as Loginout redirect...
- * Version: 0.8.1
+ * Version: 0.9
  * Text Domain: metawidget
  * Domain Path: /langs
  * Author: Sjiamnocna
@@ -32,15 +32,15 @@ class adv_meta_info extends WP_Widget {
                 $show_commentrsslink=isset($instance['show_commentrsslink']) ? $instance['show_commentrsslink'] : false;
                 $show_wordpressorglink=isset($instance['show_wordpressorglink']) ? $instance['show_wordpressorglink'] : false;
                 $show_profilelink=isset($instance['show_profilelink']) ? $instance['show_profilelink'] : false;
-                $each_entry=array('before'=>'<li>','after'=>'</li>');
-                $whole_widget=array('before'=>'<ul>','after'=>'</ul>');
+                $each_entry=($instance['show_as_element']=='li') ? array('before'=>'<li>','after'=>'</li>'): array('before'=>'<p>','after'=>'</p>');
+                $whole_widget=($instance['show_as_element']=='li') ? array('before'=>'<ul>','after'=>'</ul>'): array('before'=>'<div>','after'=>'</div>');
 		echo $before_widget;
 		if($title)echo $before_title.$title.$after_title;
                 echo $whole_widget['before'];
                 if($show_adminurl && is_user_logged_in()){
-                    echo'<li>';
+                    echo $each_entry['before'];
                     echo'<a href="'.admin_url().'" alt="'.__('Admin link','metawidget').'">'.__('Site admin','metawidget').'</a>';
-                    echo'</li>';
+                    echo $each_entry['after'];
                 }
 		if($show_loginout){
                     if($use_redir){
@@ -83,6 +83,7 @@ class adv_meta_info extends WP_Widget {
                 $instance['show_commentrsslink']=$new_instance['show_commentrsslink'];
                 $instance['show_wordpressorglink']=$new_instance['show_wordpressorglink'];
                 $instance['show_profilelink']=$new_instance['show_profilelink'];
+                $instance['show_as_element']=$new_instance['show_as_element'];
 		return $instance;
 	}
 	function form($instance) {
@@ -120,6 +121,13 @@ class adv_meta_info extends WP_Widget {
                 <p style="margin:0px;">
                     <input class="checkbox" type="checkbox" value="yes" id="<?php echo $this->get_field_id('show_wordpressorglink'); ?>" name="<?php echo $this->get_field_name('show_wordpressorglink'); ?>" <?php checked( $instance['show_wordpressorglink'],'yes'); ?> /> 
                     <label for="<?php echo $this->get_field_id('show_wordpressorglink'); ?>"><?php _e('Display link to Wordpress.org','metawidget'); ?></label><br/>
+                </p>
+                <p style="margin:15px 5px 5px 25px;">
+                    <label for="<?php echo $this->get_field_id('show_as_element'); ?>"><?php _e('Display items as','metawidget'); ?></label><br/>
+                    <select id="<?php echo $this->get_field_id('show_as_element'); ?>" name="<?php echo $this->get_field_name('show_as_element'); ?>">
+                        <option value="p" <?php selected($instance['show_as_element'],'p'); ?>><?php _e('Paragraphs','metawidget'); ?>
+                        <option value="li" <?php selected($instance['show_as_element'],'li'); ?>><?php _e('List items','metawidget'); ?>
+                    </select>
                 </p>
             </div>
 	<?php
