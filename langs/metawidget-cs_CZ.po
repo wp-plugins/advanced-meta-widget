@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Advanced meta info widget\n"
-"POT-Creation-Date: 2013-08-30 20:57+0100\n"
-"PO-Revision-Date: 2013-08-30 20:58+0100\n"
+"POT-Creation-Date: 2013-10-17 18:51+0100\n"
+"PO-Revision-Date: 2013-10-17 18:51+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: cs_cz\n"
@@ -26,78 +26,82 @@ msgstr ""
 msgid "Advanced meta info widget"
 msgstr "Informace"
 
-#: ../advanced-metainfo-widget.php:42
+#: ../advanced-metainfo-widget.php:43
 msgid "Admin link"
 msgstr "Odkaz do administrace"
 
-#: ../advanced-metainfo-widget.php:42
+#: ../advanced-metainfo-widget.php:43
 msgid "Site admin"
 msgstr "Administrace"
 
-#: ../advanced-metainfo-widget.php:55
+#: ../advanced-metainfo-widget.php:59
 msgid "Edit profile link"
 msgstr "Upravit profil"
 
-#: ../advanced-metainfo-widget.php:55
+#: ../advanced-metainfo-widget.php:59
 msgid "Profile"
 msgstr "Profil"
 
-#: ../advanced-metainfo-widget.php:60
+#: ../advanced-metainfo-widget.php:64
 msgid "Posts RSS feed"
 msgstr "RSS článků"
 
-#: ../advanced-metainfo-widget.php:65
+#: ../advanced-metainfo-widget.php:69
 msgid "Comments RSS feed"
 msgstr "RSS komentářů"
 
-#: ../advanced-metainfo-widget.php:70
+#: ../advanced-metainfo-widget.php:74
 msgid "link to Wordpress.org"
 msgstr "odkaz na stránky Wordpress.org"
 
-#: ../advanced-metainfo-widget.php:90
+#: ../advanced-metainfo-widget.php:95
 msgid "Advanced meta info Widget"
 msgstr "Rozšířený widget Informace"
 
-#: ../advanced-metainfo-widget.php:95
+#: ../advanced-metainfo-widget.php:100
 msgid "Title:"
 msgstr "Název:"
 
-#: ../advanced-metainfo-widget.php:100
+#: ../advanced-metainfo-widget.php:105
 msgid "Display admin link (only logged-in users)"
 msgstr "Zobrazovat odkaz do administrace"
 
-#: ../advanced-metainfo-widget.php:104
+#: ../advanced-metainfo-widget.php:109
 msgid "Display loginout"
 msgstr "Zobrazit přihlášení/odhlášení"
 
-#: ../advanced-metainfo-widget.php:107
+#: ../advanced-metainfo-widget.php:112
 msgid "Use redirection to actual URL"
 msgstr "Použít přesměrování na aktuální adresu"
 
-#: ../advanced-metainfo-widget.php:111
+#: ../advanced-metainfo-widget.php:117
+msgid "Display link to registration page"
+msgstr "Zobrazovat odkaz na registrační stránku"
+
+#: ../advanced-metainfo-widget.php:122
 msgid "Display link to edit or view profile (only logged-in users)"
 msgstr "Zobrazovat odkaz k editaci profilu"
 
-#: ../advanced-metainfo-widget.php:115
+#: ../advanced-metainfo-widget.php:126
 msgid "Display post RSS feed link"
 msgstr "Zobrazovat RSS příspěvků"
 
-#: ../advanced-metainfo-widget.php:119
+#: ../advanced-metainfo-widget.php:130
 msgid "Display comments RSS feed link"
 msgstr "Zobrazovat RSS komentářů"
 
-#: ../advanced-metainfo-widget.php:123
+#: ../advanced-metainfo-widget.php:134
 msgid "Display link to Wordpress.org"
 msgstr "Zobrazovat odkaz na Wordpress.org"
 
-#: ../advanced-metainfo-widget.php:126
+#: ../advanced-metainfo-widget.php:137
 msgid "Display items as"
 msgstr "Zobrazit položky jako"
 
-#: ../advanced-metainfo-widget.php:128
+#: ../advanced-metainfo-widget.php:139
 msgid "Paragraphs"
 msgstr "Odstavce"
 
-#: ../advanced-metainfo-widget.php:129
+#: ../advanced-metainfo-widget.php:140
 msgid "List items"
 msgstr "Seznam"

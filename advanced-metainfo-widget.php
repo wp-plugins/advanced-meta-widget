@@ -28,6 +28,7 @@ class adv_meta_info extends WP_Widget {
                 $show_adminurl=isset($instance['show_admin_link']) ? $instance['show_admin_link'] : false;
 		$show_loginout=isset($instance['show_loginout']) ? $instance['show_loginout'] : false;
                 $use_redir=isset($instance['use_loginout_redir']) ? $instance['use_loginout_redir'] : false;
+                $show_wpreglink=isset($instance['show_wpreglink']) ? $instance['show_wpreglink'] : false;
                 $show_postrsslink=isset($instance['show_postrsslink']) ? $instance['show_postrsslink'] : false;
                 $show_commentrsslink=isset($instance['show_commentrsslink']) ? $instance['show_commentrsslink'] : false;
                 $show_wordpressorglink=isset($instance['show_wordpressorglink']) ? $instance['show_wordpressorglink'] : false;
@@ -49,6 +50,9 @@ class adv_meta_info extends WP_Widget {
                     echo $each_entry['before'];
                     wp_loginout($redir);
                     echo $each_entry['after'];
+                }
+                if($show_wpreglink){
+                    wp_register($each_entry['before'],$each_entry['after'],TRUE);
                 }
                 if($show_profilelink && is_user_logged_in()){
                     echo $each_entry['before'];
@@ -79,6 +83,7 @@ class adv_meta_info extends WP_Widget {
                 $instance['show_admin_link']=$new_instance['show_admin_link'];
 		$instance['show_loginout']=$new_instance['show_loginout'];
                 $instance['use_loginout_redir']=$new_instance['use_loginout_redir'];
+                $instance['show_wpreglink']=$new_instance['show_wpreglink'];
                 $instance['show_postrsslink']=$new_instance['show_postrsslink'];
                 $instance['show_commentrsslink']=$new_instance['show_commentrsslink'];
                 $instance['show_wordpressorglink']=$new_instance['show_wordpressorglink'];
@@ -87,7 +92,7 @@ class adv_meta_info extends WP_Widget {
 		return $instance;
 	}
 	function form($instance) {
-		$defaults = array('title'=>__('Advanced meta info Widget','metawidget'),'show_admin_link'=>'yes','show_loginout'=>'yes','use_loginout_redir'=>false,'show_postrsslink'=>'yes','show_commentrsslink'=>false,'show_wordpressorglink'=>'yes');
+		$defaults = array('title'=>__('Advanced meta info Widget','metawidget'),'show_as_element'=>'li','show_admin_link'=>'yes','show_loginout'=>'yes','use_loginout_redir'=>false,'show_profilelink'=>false,'show_postrsslink'=>'yes','show_commentrsslink'=>false,'show_wordpressorglink'=>'yes');
 		$instance = wp_parse_args($instance, $defaults );
                 ?>
             <div id="options" style="margin:0px 0 15px 0;padding:0px;">
@@ -106,6 +111,12 @@ class adv_meta_info extends WP_Widget {
                         <input class="checkbox" style="margin-left:10px;" type="checkbox" value="yes" id="<?php echo $this->get_field_id('use_loginout_redir'); ?>" name="<?php echo $this->get_field_name('use_loginout_redir'); ?>" <?php checked($instance['use_loginout_redir'],'yes'); ?> />
                         <label for="<?php echo $this->get_field_id('use_loginout_redir'); ?>"><?php _e('Use redirection to actual URL', 'metawidget'); ?></label>
                 </p>
+                <?php if(get_option('users_can_register')){ ?>
+                <p style="margin:0px;">
+                    <input class="checkbox" type="checkbox" value="yes" id="<?php echo $this->get_field_id('show_wpreglink'); ?>" name="<?php echo $this->get_field_name('show_wpreglink'); ?>" <?php checked( $instance['show_wpreglink'],'yes'); ?> /> 
+                    <label for="<?php echo $this->get_field_id('show_wpreglink'); ?>"><?php _e('Display link to registration page','metawidget'); ?></label><br/>
+                </p>
+                <?php } ?>
                 <p style="margin:0px;">
                     <input class="checkbox" type="checkbox" value="yes" id="<?php echo $this->get_field_id('show_profilelink'); ?>" name="<?php echo $this->get_field_name('show_profilelink'); ?>" <?php checked( $instance['show_profilelink'],'yes'); ?> /> 
                     <label for="<?php echo $this->get_field_id('show_profilelink'); ?>"><?php _e('Display link to edit or view profile (only logged-in users)','metawidget'); ?></label><br/>

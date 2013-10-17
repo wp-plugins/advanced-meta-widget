@@ -6,7 +6,7 @@ Tested up to: 3.5.2
 Stable tag: 2.5.8
 License: GPLv2 or later
 
-Advanced meta widget allows you to chose, what you want to display in meta widget, and allows you to use redirect to actual URL when using login/out
+Advanced meta widget allows you to chose, what you want to display in meta widget and adds many other features to manage it.
 
 == Description ==
 
