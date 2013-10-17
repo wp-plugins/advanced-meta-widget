@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Advanced meta widget
  * Description: Widget for displaying Wordpress info - Login/out, Admin, RSS feeds and Link to wordpress.org extended by few functions as Loginout redirect...
- * Version: 0.9
+ * Version: 0.9.1
  * Text Domain: metawidget
  * Domain Path: /langs
  * Author: Sjiamnocna
