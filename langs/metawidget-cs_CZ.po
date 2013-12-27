@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Advanced meta info widget\n"
-"POT-Creation-Date: 2013-11-27 18:02+0100\n"
-"PO-Revision-Date: 2013-11-27 18:07+0100\n"
+"POT-Creation-Date: 2013-12-27 09:09+0100\n"
+"PO-Revision-Date: 2013-12-27 09:10+0100\n"
 "Last-Translator: sjiamnocna <jancikuvmail@gmail.com>\n"
 "Language-Team: \n"
 "Language: cs_cz\n"
@@ -26,110 +26,141 @@ msgstr ""
 msgid "Advanced meta info widget"
 msgstr "Informace"
 
-#: ../advanced-metainfo-widget.php:44
+#: ../advanced-metainfo-widget.php:45
 msgid "Admin link"
 msgstr "Odkaz do administrace"
 
-#: ../advanced-metainfo-widget.php:44
+#: ../advanced-metainfo-widget.php:45
 msgid "Site admin"
 msgstr "Administrace"
 
-#: ../advanced-metainfo-widget.php:60
+#: ../advanced-metainfo-widget.php:61
 msgid "Edit profile link"
 msgstr "Upravit profil"
 
-#: ../advanced-metainfo-widget.php:60
+#: ../advanced-metainfo-widget.php:61
 msgid "Profile"
 msgstr "Profil"
 
-#: ../advanced-metainfo-widget.php:65
+#: ../advanced-metainfo-widget.php:66
 msgid "Posts RSS feed"
 msgstr "RSS článků"
 
-#: ../advanced-metainfo-widget.php:70
+#: ../advanced-metainfo-widget.php:71
 msgid "Comments RSS feed"
 msgstr "RSS komentářů"
 
-#: ../advanced-metainfo-widget.php:75
+#: ../advanced-metainfo-widget.php:76
 msgid "link to Wordpress.org"
 msgstr "odkaz na stránky Wordpress.org"
 
-#: ../advanced-metainfo-widget.php:105
+#: ../advanced-metainfo-widget.php:99
 msgid "Advanced meta info Widget"
 msgstr "Rozšířený widget Informace"
 
-#: ../advanced-metainfo-widget.php:110
+#: ../advanced-metainfo-widget.php:104
 msgid "Title:"
 msgstr "Název:"
 
-#: ../advanced-metainfo-widget.php:115
+#: ../advanced-metainfo-widget.php:109
 msgid "Display admin link (only logged-in users)"
 msgstr "Zobrazovat odkaz do administrace"
 
-#: ../advanced-metainfo-widget.php:119
+#: ../advanced-metainfo-widget.php:113
 msgid "Display loginout"
 msgstr "Zobrazit přihlášení/odhlášení"
 
-#: ../advanced-metainfo-widget.php:122
+#: ../advanced-metainfo-widget.php:116
 msgid "Use redirection to actual URL"
 msgstr "Použít přesměrování na aktuální adresu"
 
-#: ../advanced-metainfo-widget.php:127
+#: ../advanced-metainfo-widget.php:121
 msgid "Display link to registration page"
 msgstr "Zobrazovat odkaz na registrační stránku"
 
-#: ../advanced-metainfo-widget.php:132
+#: ../advanced-metainfo-widget.php:126
 msgid "Display link to edit or view profile (only logged-in users)"
 msgstr "Zobrazovat odkaz k editaci profilu"
 
-#: ../advanced-metainfo-widget.php:136
+#: ../advanced-metainfo-widget.php:130
 msgid "Display post RSS feed link"
 msgstr "Zobrazovat RSS příspěvků"
 
-#: ../advanced-metainfo-widget.php:139
+#: ../advanced-metainfo-widget.php:133
 msgid "RSS Atom"
 msgstr "Atom RSS"
 
-#: ../advanced-metainfo-widget.php:140
+#: ../advanced-metainfo-widget.php:134
 msgid "RDF"
 msgstr "RDF"
 
-#: ../advanced-metainfo-widget.php:141
+#: ../advanced-metainfo-widget.php:135
 msgid "RSS"
 msgstr "RSS"
 
-#: ../advanced-metainfo-widget.php:142
+#: ../advanced-metainfo-widget.php:136
 msgid "RSS2"
 msgstr "RSS 2"
 
-#: ../advanced-metainfo-widget.php:148
+#: ../advanced-metainfo-widget.php:142
 msgid "Display comments RSS feed link"
 msgstr "Zobrazovat RSS komentářů"
 
-#: ../advanced-metainfo-widget.php:152
+#: ../advanced-metainfo-widget.php:146
 msgid "Display link to Wordpress.org"
 msgstr "Zobrazovat odkaz na Wordpress.org"
 
-#: ../advanced-metainfo-widget.php:154
-msgid "Wordpress.org"
-msgstr "Wordpress.org"
+#: ../advanced-metainfo-widget.php:148
+msgid "English"
+msgstr "Anglicky"
 
-#: ../advanced-metainfo-widget.php:155
+#: ../advanced-metainfo-widget.php:149
 msgid "Russian"
 msgstr "Ruský web"
 
-#: ../advanced-metainfo-widget.php:156
+#: ../advanced-metainfo-widget.php:150
 msgid "Czech"
 msgstr "Český web"
 
-#: ../advanced-metainfo-widget.php:160
+#: ../advanced-metainfo-widget.php:151
+msgid "German"
+msgstr "Německy"
+
+#: ../advanced-metainfo-widget.php:152
+msgid "Albanian"
+msgstr "Albánsky"
+
+#: ../advanced-metainfo-widget.php:153
+msgid "Arabic"
+msgstr "Arabsky"
+
+#: ../advanced-metainfo-widget.php:154
+msgid "Bosnian"
+msgstr "Bosňansky"
+
+#: ../advanced-metainfo-widget.php:155
+msgid "Catalan"
+msgstr "Katalánsky"
+
+#: ../advanced-metainfo-widget.php:156
+msgid "Chinese"
+msgstr "Čínsky"
+
+#: ../advanced-metainfo-widget.php:157
+msgid "Croatian"
+msgstr "Chorvatsky"
+
+#: ../advanced-metainfo-widget.php:161
 msgid "Display items as"
 msgstr "Zobrazit položky jako"
 
-#: ../advanced-metainfo-widget.php:162
+#: ../advanced-metainfo-widget.php:163
 msgid "Paragraphs"
 msgstr "Odstavce"
 
-#: ../advanced-metainfo-widget.php:163
+#: ../advanced-metainfo-widget.php:164
 msgid "List items"
 msgstr "Seznam"
+
+#~ msgid "Wordpress.org"
+#~ msgstr "Wordpress.org"

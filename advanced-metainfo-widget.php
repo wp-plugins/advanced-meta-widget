@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Advanced meta widget
  * Description: Widget for displaying Wordpress info - Login/out, Admin, RSS feeds and Link to wordpress.org extended by few functions as Loginout redirect...
- * Version: 0.9.2
+ * Version: 0.9.3
  * Text Domain: metawidget
  * Domain Path: /langs
  * Author: Sjiamnocna
@@ -33,6 +33,7 @@ class adv_meta_info extends WP_Widget {
                 $postrsslink_type=isset($instance['use_rss_format']) ? $instance['use_rss_format'] : '';
                 $show_commentrsslink=isset($instance['show_commentrsslink']) ? $instance['show_commentrsslink'] : false;
                 $show_wordpressorglink=isset($instance['show_wordpressorglink']) ? $instance['show_wordpressorglink'] : false;
+                $wordpressorglink_lang_dom=isset($instance['wporglink_lang'])?$instance['wporglink_lang'].'.wordpress.org':'www.wordpress.org';
                 $show_profilelink=isset($instance['show_profilelink']) ? $instance['show_profilelink'] : false;
                 $each_entry=($instance['show_as_element']=='li') ? array('before'=>'<li>','after'=>'</li>'): array('before'=>'<p>','after'=>'</p>');
                 $whole_widget=($instance['show_as_element']=='li') ? array('before'=>'<ul>','after'=>'</ul>'): array('before'=>'<div>','after'=>'</div>');
@@ -72,7 +73,7 @@ class adv_meta_info extends WP_Widget {
                 }
                 if($show_wordpressorglink){
                     echo $each_entry['before'];
-                    echo'<a href="http://wordpress.org/" alt="'.__('link to Wordpress.org','metawidget').'">'.'Wordpress.org'.'</a>';
+                    echo'<a href="http://'.$wordpressorglink_lang_dom.'/" alt="'.__('link to Wordpress.org','metawidget').'">'.'Wordpress.org'.'</a>';
                     echo $each_entry['after'];
                 }
                 echo $whole_widget['after'];
@@ -88,6 +89,7 @@ class adv_meta_info extends WP_Widget {
                 $instance['show_postrsslink']=$new_instance['show_postrsslink'];
                 $instance['show_commentrsslink']=$new_instance['show_commentrsslink'];
                 $instance['show_wordpressorglink']=$new_instance['show_wordpressorglink'];
+                $instance['wporglink_lang']=$new_instance['wporglink_lang'];
                 $instance['show_profilelink']=$new_instance['show_profilelink'];
                 $instance['show_as_element']=$new_instance['show_as_element'];
                 $instance['use_rss_format']=$new_instance['use_rss_format'];
@@ -143,9 +145,16 @@ class adv_meta_info extends WP_Widget {
                     <input class="checkbox" type="checkbox" value="yes" id="<?php echo $this->get_field_id('show_wordpressorglink'); ?>" name="<?php echo $this->get_field_name('show_wordpressorglink'); ?>" <?php checked( $instance['show_wordpressorglink'],'yes'); ?> /> 
                     <label for="<?php echo $this->get_field_id('show_wordpressorglink'); ?>"><?php _e('Display link to Wordpress.org','metawidget'); ?></label><br/>
                     <select style="margin-left:8%;" id="<?php echo $this->get_field_id('wporglink_lang'); ?>" name="<?php echo $this->get_field_name('wporglink_lang'); ?>">
-                        <option value="nolang" <?php selected($instance['wporglink_lang'],'nolang'); ?>><?php _e('Wordpress.org','metawidget'); ?>
+                        <option value="nolang" <?php selected($instance['wporglink_lang'],'nolang'); ?>><?php _e('English','metawidget'); ?>
                         <option value="ru" <?php selected($instance['wporglink_lang'],'ru'); ?>><?php _e('Russian','metawidget'); ?>
-                        <option value="cs" <?php selected($instance['wporglink_lang'],'sc'); ?>><?php _e('Czech','metawidget'); ?>
+                        <option value="cs" <?php selected($instance['wporglink_lang'],'cs'); ?>><?php _e('Czech','metawidget'); ?>
+                        <option value="de" <?php selected($instance['wporglink_lang'],'de'); ?>><?php _e('German','metawidget'); ?>
+                        <option value="sq" <?php selected($instance['wporglink_lang'],'sq'); ?>><?php _e('Albanian','metawidget'); ?>
+                        <option value="ar" <?php selected($instance['wporglink_lang'],'ar'); ?>><?php _e('Arabic','metawidget'); ?>
+                        <option value="bs" <?php selected($instance['wporglink_lang'],'bs'); ?>><?php _e('Bosnian','metawidget'); ?>
+                        <option value="ca" <?php selected($instance['wporglink_lang'],'ca'); ?>><?php _e('Catalan','metawidget'); ?>
+                        <option value="cn" <?php selected($instance['wporglink_lang'],'cn'); ?>><?php _e('Chinese','metawidget'); ?>
+                        <option value="hr" <?php selected($instance['wporglink_lang'],'hr'); ?>><?php _e('Croatian','metawidget'); ?>
                     </select>
                 </p>
                 <p style="margin:15px 5px 5px 25px;">
@@ -155,12 +164,6 @@ class adv_meta_info extends WP_Widget {
                         <option value="li" <?php selected($instance['show_as_element'],'li'); ?>><?php _e('List items','metawidget'); ?>
                     </select>
                 </p>
-                <form style="display:block; margin:8px auto;" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                </form>
             </div>
 	<?php
 	}

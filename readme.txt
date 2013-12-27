@@ -19,12 +19,14 @@ Unpack archive contents into plugin folder (/wp-content/plugins/) and activate i
 
 == Screenshots ==
 
-1. Thats how it appears in Appearance->Widgets (v.0.8)
-2. When logged in with all options checked (v.0.8)
-3. When logged out with all options checked (v.0.8)
+1. Thats how it appears in Appearance->Widgetss
+2. When logged in with all options checked
+3. When logged out with all options checked
 
 == Changelog ==
 
+= 0.9.3 =
+*Fixing some bugs
 = 0.9.2 =
 *Added option to chose what type of RSS to use for posts RSS link and option to change the wordpress.org url for some languages.
 = 0.9.1 =
