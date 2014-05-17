@@ -2,8 +2,8 @@
 Contributors: sjiamnocna
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=65SS8NS48FPFQ&lc=CZ&item_name=%c5%a0imon%20Jan%c4%8da&currency_code=CZK&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: meta, widget, loginout, redirect, info, admin, user, wordpress.org, language, RSS
-Requires at least: 2.7
-Tested up to: 3.7.1
+Requires at least: 2.6
+Tested up to: 3.9.1
 Stable tag: 0.8
 License: GPLv2 or later
 
