@@ -2,8 +2,8 @@
 Contributors: sjiamnocna
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=65SS8NS48FPFQ&lc=CZ&item_name=%c5%a0imon%20Jan%c4%8da&currency_code=CZK&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: meta, widget, loginout, redirect, info, admin, user, wordpress.org, language, RSS
-Requires at least: 2.6
-Tested up to: 3.9.1
+Requires at least: 2.5
+Tested up to: 4.1
 Stable tag: 0.8
 License: GPLv2 or later
 
@@ -11,7 +11,7 @@ Advanced meta widget allows you to chose, what you want to display in meta widge
 
 == Description ==
 
-Advanced meta widget adds new widget which does the same as basic Wordpress built-in meta widget but allows you to chose what you want to display, and adds more features for managing this widget.
+Advanced meta widget adds new widget which lets you select what to display. Developers can simply add new functions (items that can be added to widget).
 
 == Installation ==
 
@@ -24,7 +24,10 @@ Unpack archive contents into plugin folder (/wp-content/plugins/) and activate i
 3. When logged out with all options checked
 
 == Changelog ==
-
+= 1.0.1 =
+*tested and fixed on WP 4.1
+= 1.0 =
+*Completely changed to better work and extensivity for developers
 = 0.9.3 =
 *Fixing some bugs
 = 0.9.2 =
