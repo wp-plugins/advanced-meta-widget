@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Advanced meta widget
  * Description: Widget for displaying Wordpress info - Login/out, Admin, RSS feeds and Link to wordpress.org extended by few functions as Loginout redirect...
- * Version: 1.0.1
+ * Version: 1.0.2
  * Text Domain: metawidget
  * Domain Path: /langs
  * Author: Sjiamnocna
@@ -36,17 +36,6 @@ function curPageURL() {
  }
  return $pageURL;
 }
-function amw_message(){
-        function amw_donation() {
-            echo '
-            <div id="error" class="updated fade"><p><strong>'.sprintf(__('Hi, Im working hard and spent much time to develop the plugin advanced meta widget. Im not professional (Im student) and Ive got to troubles with my PC, that I cant afford to repair or renew. %s that I can continue working. Every pence can help me. Thank you'),'<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=65SS8NS48FPFQ&lc=CZ&item_name=%c5%a0imon%20Jan%c4%8da&currency_code=CZK&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted">'.__('Please donate me','wpsongbook').'</a>').'</strong> '.'</p></div>';
-        }
-    if(stripos(curPageURL(),'plugins.php')||stripos(curPageURL(),'index.php')||stripos(curPageURL(),'widgets.php')||endsWith(curPageURL(),'wp-admin/')){
-    add_action('admin_notices', 'amw_donation');
-    }
-}
-add_action('init','amw_message');
-
 class adv_meta_info extends WP_Widget {
 	function adv_meta_info() {
 		$widget_ops=array('classname'=>'metawidget','description'=>__('Widget displaying many useful informations as Admin link or Login link and RSS feed links','metawidget'));
