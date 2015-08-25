@@ -3,8 +3,8 @@ Contributors: sjiamnocna
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=65SS8NS48FPFQ&lc=CZ&item_name=%c5%a0imon%20Jan%c4%8da&currency_code=CZK&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: meta, widget, loginout, redirect, info, admin, user, wordpress.org, language, RSS
 Requires at least: 2.5
-Tested up to: 4.2.2
-Stable tag: 1.0.2
+Tested up to: 4.3
+Stable tag: 1.1
 License: GPLv2 or later
 
 Advanced meta widget allows you to chose, what you want to display in meta widget and adds many other features to manage it.
@@ -24,6 +24,10 @@ Unpack archive contents into plugin folder (/wp-content/plugins/) and activate i
 3. When logged out with all options checked
 
 == Changelog ==
+
+= 1.1 =
+*Tested on 4.3
+*Removed old class constructor (for PHP 7 and WP 4.3+)
 = 1.0.1 =
 *tested and fixed on WP 4.1
 = 1.0 =
